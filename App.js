@@ -1,11 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
-import { NavigationContainer } from "@react-navigation/native";
+//import { NavigationContainer } from "@react-navigation/native";
 
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+//import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import LoginForm from "./views/loginForm/LoginForm";
 
-import VistaActualizar from "./views/actualizaVista";
+/*import VistaActualizar from "./views/actualizaVista";
 import VistaGeneral from "./views/vistaGeneral";
 import VistaCrear from "./views/crearVista";
 import VistaEliminar from "./views/eliminarvista";
@@ -14,7 +15,6 @@ import React from "react";
 
 const array = [
   {
-    name: "Jesús",
     email: "jesus@example.com",
     age: 22,
   },
@@ -86,4 +86,21 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 40,
   },
-});
+});*/
+
+export default function App() {
+  return (
+    <View>
+      <LoginForm />
+    </View>
+  );
+}
+
+/*const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});*/
