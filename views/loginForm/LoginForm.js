@@ -1,5 +1,4 @@
 import React from "react";
-//import { Linking } from "react-native";
 import {
   StyleSheet,
   View,
@@ -17,7 +16,6 @@ export default function LoginForm({ text }) {
     //Si es más de un elemento, debe ir dentro de un View.
     <SafeAreaView backgroundColor="#6f4a8e">
       <View style={styles.container}>
-        {/*<Text style={styles.title}>Pantalla de iniciar sesión</Text>*/}
         <Image
           style={styles.imagen}
           source={require("../../assets/Logo.png")}
@@ -26,12 +24,14 @@ export default function LoginForm({ text }) {
           style={styles.input}
           placeholder="Correo Electrónico"
           autoCapitalize="none"
+          placeholderTextColor={"#6f4a8e"}
         />
         <TextInput
           style={styles.input}
           placeholder="Contraseña"
           autoCapitalize="none"
           secureTextEntry={true}
+          placeholderTextColor={"#6f4a8e"}
         />
 
         {/*<Button
@@ -61,7 +61,7 @@ export default function LoginForm({ text }) {
             textAlign: "center",
             textDecorationLine: "underline",
           }}
-          onPress={() => Linking.openURL("http://google.com")}
+          onPress={() => Linking.openURL("#")}
         >
           Olvidaste la contraseña
         </Text>
@@ -79,13 +79,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#6f4a8e",
     alignItems: "center",
     marginTop: 80,
-  },
-  title: {
-    textAlign: "center",
-    fontSize: 28,
-    fontWeight: "bold",
-    marginTop: 50,
-    marginBottom: 15,
   },
   input: {
     height: 60,
